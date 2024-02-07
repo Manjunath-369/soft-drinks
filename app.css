@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "P";
+  src: url(Product\ Sans\ Regular.ttf);
+}
+@font-face {
+  font-family: "B";
+  src: url(Product\ Sans\ Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "P";
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: orangered;
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 10;
+}
+.nav-mid {
+  display: flex;
+  gap: 5vw;
+}
+a {
+  text-decoration: none;
+}
+
+nav a,
+i {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.page1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(135deg, orange, rgba(234, 28, 28, 0.619));
+}
+
+.fanta {
+  width: 20vw;
+  position: absolute;
+  top: 7vw;
+  z-index: 6;
+  transition: all ease 0.1ms;
+}
+.orslice {
+  width: 15vw;
+  position: absolute;
+  z-index: 1;
+  top: 4vw;
+  left: 32vw;
+  transition: all ease 0.1ms;
+}
+.orange {
+  width: 20vw;
+  right: 25vw;
+  bottom: 0vw;
+  position: absolute;
+  z-index: 2;
+  transition: all ease 0.1ms;
+}
+
+.page1 h1 {
+  font-family: "B";
+  font-size: 300px;
+  color: white;
+}
+
+.leaf {
+  position: absolute;
+  width: 15vw;
+  left: 10vw;
+  top: 11vw;
+  transform: rotate(360deg);
+  transition: all ease 0.1ms;
+}
+.leaf2 {
+  position: absolute;
+  width: 10vw;
+  right: 11vw;
+  bottom: 5vw;
+  transform: rotate(-90deg);
+  transition: all ease 0.1ms;
+}
+.cocoleaf {
+  position: absolute;
+  width: 20vw;
+  top: 10%;
+  right: 0%;
+}
+.page2 {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  background-color: rgb(88, 21, 21);
+  overflow: hidden;
+}
+
+.page2-r,
+.page2-l {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  color: white;
+}
+
+.page2-r {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3vw;
+  margin-right: 5vw;
+  overflow-x: hidden;
+}
+.page2-tit {
+  font-size: 75px;
+}
+.page2-l svg {
+  width: 25vw;
+  margin-top: 35vh;
+  transform: rotate(120deg);
+}
+.page3 {
+  width: 100%;
+  height: 100vh;
+  background-color: orangered;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+}
+.cards {
+  width: 25vw;
+  height: 70vh;
+  margin-top: 25vh;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 10px 10px 25px;
+  position: relative;
+}
+.card h1{
+    position: absolute;
+    bottom: 4vw;
+    left: 40%;
+
+}
+button {
+  position: absolute;
+  bottom: 1vw;
+  left: 40%;
+  padding: 0.5vw 0.9vw;
+  border: none;
+  background: orange;
+  border-radius: 50px;
+  color: #fff;
+}
+.coco {
+  margin-top: -2.8vw;
+  position: absolute;
+  width: 13vw;
+  z-index: 6;
+  top: -1vw;
+  left: 27%;
+}
+
+.pepsi {
+  width: 20vw;
+  position: absolute;
+  top: -5vw;
+  z-index: 6;
+  left: 4vw;
+}
+.coc-h {
+  margin-top: 1.9vw;
+  margin-left: -7%;
+}
+
+.lemon {
+  position: absolute;
+  top: -13vw;
+  width: 25vw;
+  z-index: 0;
+}
+.lemon1,.lemon3{
+    position: absolute;
+    margin-top:-15vw ;
+    width: 25vw;
+    z-index: 4;
+}
